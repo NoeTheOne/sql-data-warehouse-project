@@ -66,7 +66,7 @@ GO
 
 CREATE TABLE silver.erp_cust_az12(
 	cid NVARCHAR(50),
-	bdate DATETIME,
+	bdate DATE,
 	gen NVARCHAR(50),
 	dwh_create_date DATETIME2 DEFAULT GETDATE()
 );
