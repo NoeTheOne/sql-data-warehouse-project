@@ -1,10 +1,15 @@
 /*
-	Exploratory Data Analysis (EDA)
-	Consists in 6 steps of exploratory actions helpng to undestand the Data on the business
+===============================================================================
+Measures Exploration (Key Metrics)
+===============================================================================
+Purpose:
+    - To calculate aggregated metrics (e.g., totals, averages) for quick insights.
+    - To identify overall trends or spot anomalies.
+
+SQL Functions Used:
+    - COUNT(), SUM(), AVG()
+===============================================================================
 */
---=======================================================================
--- 04 >> Measures Exploration
---=======================================================================
 -- Find the Total Sales
 SELECT SUM(sales_amount) AS total_sales
 FROM gold.fact_sales
