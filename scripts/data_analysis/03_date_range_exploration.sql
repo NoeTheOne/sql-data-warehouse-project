@@ -1,10 +1,16 @@
 /*
-	Exploratory Data Analysis (EDA)
-	Consists in 6 steps of exploratory actions helpng to undestand the Data on the business
+===============================================================================
+Date Range Exploration 
+===============================================================================
+Purpose:
+    - To determine the temporal boundaries of key data points.
+    - To understand the range of historical data.
+
+SQL Functions Used:
+    - MIN(), MAX(), DATEDIFF()
+===============================================================================
 */
---=======================================================================
--- 03 >> Date Exploration
---=======================================================================
+
 -- Find the date of the first and last order
 SELECT 
 	MIN(order_date) as fist_order_date, 
