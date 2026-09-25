@@ -38,6 +38,9 @@ Everything is for Free!
 
 ---
 ### BI: Analytics & Reporting (Data Analysis)
+A comprehensive collection of SQL scripts for data exploration, analytics, and reporting. These scripts cover various analyses such as database exploration, measures and metrics, time-based trends, cumulative analytics, segmentation, and more.
+This repository contains SQL queries designed to help data analysts and BI professionals quickly explore, segment, and analyze data within a relational database. Each script focuses on a specific analytical theme and demonstrates best practices for SQL queries.
+
 
 #### Objective
 Develop SQL-based analytics to deliver detailed insights into:
@@ -61,12 +64,14 @@ data-warehouse-project/
 │   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
 │   ├── data_flow.drawio                # Draw.io file for the data flow diagram
 │   ├── data_models.drawio              # Draw.io file for data models (star schema)
+│   ├── data_analytics.drawio           # Draw.io file for data analytics (exploratory and advance)
 │   ├── naming_conventions.md           # Consistent naming guidelines for tables, columns, and files
 │
 ├── scripts/                            # SQL scripts for ETL and transformations
 │   ├── bronze/                         # Scripts for extracting and loading raw data
 │   ├── silver/                         # Scripts for cleaning and transforming data
 │   ├── gold/                           # Scripts for creating analytical models
+│   ├── data_analysis/                  # SQL scripts to cover various database explorations and analysis
 │
 ├── tests/                              # Test scripts and quality files
 │
