@@ -18,7 +18,7 @@ SELECT
 	SUM(sales_amount) AS total_sales		
 FROM gold.fact_sales 
 WHERE order_date IS NOT NULL
-GROUP BY DATETRUNC(year, order_date)	
+GROUP BY DATETRUNC(year, order_date);
 
 -- Calculate the total sales per month
 -- and the running total of sales over time (year)
@@ -34,7 +34,7 @@ FROM
 	FROM gold.fact_sales 
 	WHERE order_date IS NOT NULL
 	GROUP BY DATETRUNC(month, order_date)	
-) t
+) t;
 
 -- Calculate the moving average 
 SELECT 
@@ -51,4 +51,4 @@ FROM
 	FROM gold.fact_sales 
 	WHERE order_date IS NOT NULL
 	GROUP BY DATETRUNC(month, order_date)	
-) t
+) t;
